@@ -1,0 +1,93 @@
+Q1.
+cat m1.txt m2.txt >> m3.txt
+cat m3.txt
+
+Q2.
+cp m3.txt ~/FISAT/DAY3/c3.txt
+~/FISAT/DAY3$ cat c3.txt
+
+
+Q3.
+FISAT/DAY1$ chmod a+w F1.sh
+exam@debian:~/FISAT/DAY1$ ls -l
+
+
+Q4. ps
+    
+Q5.
+cd FISAT
+~/FISAT$ pwd
+
+
+Q2.
+emacs area.sh
+
+echo "Menu"
+echo -e "1.Circle \n2.Rectangle \n3.Triangle"
+echo "Enter choice"
+read ch
+case $ch in
+    1)
+	echo "Enter radius"
+	read r
+	area=` expr $r \* $r \* 22 `
+	area1=` expr $area / 7 `
+	echo  "Area of circle: $area1"
+	;;
+    2)
+	echo "Enter length"
+	read l
+	echo "Enter breadth"
+	read b
+	area=` expr $l \* $b `
+	echo "Area of rectangle: $area"
+	;;
+    3)
+	echo "Enter base"
+	read b
+	echo "Enter height"
+	read h
+	area=` expr $b \* $h / 2 `
+	echo "Area of triangle: $area"
+	;;
+    esac
+	
+
+OUTPUT
+
+bash area.sh
+
+Menu
+1.Circle 
+2.Rectangle 
+3.Triangle
+Enter choice
+1
+Enter radius
+2
+Area of circle: 12
+exam@debian:~$ bash area.sh
+Menu
+1.Circle 
+2.Rectangle 
+3.Triangle
+Enter choice
+2
+Enter length
+3
+Enter breadth
+4
+Area of rectangle: 12
+exam@debian:~$ bash area.sh
+Menu
+1.Circle 
+2.Rectangle 
+3.Triangle
+Enter choice
+3
+Enter base
+2
+Enter height
+4
+Area of triangle: 4
+
